@@ -1,5 +1,8 @@
-def three_args(*, var1, var2=None, var3=None):
-    arguments = ', '.join([f'{arg[0]} = {str(arg[1])}' for arg in locals().items() if arg[1] is not None])
-    print(f'Arguments: {arguments}')
 
-three_args(var1=2, var2='Hello', var3=10)
+def funk1(*args):
+    for i in args:
+        print(i)
+
+    return i
+
+funk1(1, 4.5, 'Hello', [])
